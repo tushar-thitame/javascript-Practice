@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="border: 1px solid black; display: inline-block">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+    <script>
+      // let str = "tushar";
+      // function owels(str) {
+      //   for (let i of str) {
+      //     if (i == "a" || i == "e" || i == "i" || i == "o" || i == "u") {
+      //       console.log("owels are print", i);
+      //     }
+      //   }
+      // }
+      // owels(str);
+      // function twice(nums) {
+      //   for (let i = 0; i < nums.length; i++) {
+      //     for (let j = 0; j < nums.length; j++) {
+      //       if (i != j && nums[i] === nums[j]) {
+      //         return true;
+      //       }
+      //     }
+      //   }
+      //   return false;
+      // }
+      // // console.log(twice([1, 2, 3, 4, 2]));
+      // console.log(twice([1, 2, 3, 4]));
+
+      // fetch("https://fakestoreapi.com/products")
+      //   .then((response) => response.json())
+      //   .then((data) => {
+      //     console.log("response------", data);
+      //      let frontofscrren= document.getElementById('display');
+      //      let output="";
+
+      //   });
+      // let URL = "https://fakestoreapi.com/products";
+      // let promises = fetch(URL);
+      // console.log(promises);
+      // let URL = "https://fakestoreapi.com/products";
+      // let getfacts = async () => {
+      //   let promise = await fetch(URL);
+      //   let data = await promise.json();
+
+      //   let frontpage = document.getElementById("display");
+      //   frontpage.innerText = JSON.stringify(data, null, 2);
+      // };
+      // getfacts();
+    </script>
+    <script>
+      //ternary operator
+      // let age = 20;
+      // let result = age > 15 ? "adult" : "notadult";
+      // console.log(result);
+      // document.getElementById("display").innerText = result;
+      // let usernum = prompt("enter number");
+      // if (usernum % 5 == 0) {
+      //   alert("yes multiple by five");
+      // } else {
+      //   alert("no multiple by five");
+      // }
+      // let grade;
+      // let score = 48;
+      // if (score < 50) {
+      //   console.log("grade C");
+      // } else if (score >= 50 && score <= 70) {
+      //   console.log("grade B");
+      // } else if (score > 70 && score <= 100) {
+      //   console.log("grade A");
+      // } else {
+      // }
+      //   let gamenum = prompt("enter correct number");
+      //   let mynum = 25;
+      //  while(gamenum !=mynum){
+      //   gamenum = prompt("enter correct number");
+      //  }
+      //  console.log("correct")
+      // let random = Math.floor(Math.random() * 100) + 1;
+      // let guess;
+      // let attempt = 0;
+      // while (random !== guess) {
+      //   guess = Number(prompt("enter correct number 1 to 100"));
+      //   attempt++;
+      //   if (random > guess) {
+      //     alert("guess less number");
+      //   } else if (random < guess) {
+      //     alert("guess large number");
+      //   } else if (random === guess) {
+      //     alert("corrected.....");
+      //   } else {
+      //     alert("invalid num");
+      //   }
+      // }
+      // let str = "tushar";
+      // let str2 = "sir";
+      // let tt = str.replace("t", "h"); //us
+      // document.getElementById("display").innerText = tt;
+      // let username = prompt("enter name ");
+      // //let result = "@" + username + username.length;
+      // let result = `@${username} charactercount= ${username.length}`;
+      // document.getElementById("display").innerHTML = result;
+      // let arr = [10, 20, 30, 40, 50];
+      // let sum = 0;
+      // for (let i of arr) {
+      //   sum = sum + i;
+      // }
+      // let avg = sum / arr.length;
+      // console.log(`average marks of student ${avg}`);
+      // let marksArray = [100, 250, 300, 400, 500];
+      // let i = 0;
+      // for (let val of marksArray) {
+      //   console.log(`${i} =${val} `);
+
+      //   let offer = val / 10;
+      //   marksArray[i] = marksArray[i] - offer;
+      //   console.log(`after offer is a 10 % =${marksArray[i]}`);
+      //   i++;
+      // }
+      // let marksArray = [100, 250, 300, 400, 500];
+      // console.log(marksArray);
+      // let pushmethod = marksArray.push(600);
+      // let pushmethod = marksArray.pop(600);
+      // let pushmethod = marksArray.unshift(600);
+      //let pushmethod = marksArray.shift(600);
+      //console.log(marksArray);
+      // function owelprint(str) {
+      //   let count = 0;
+      //   let ovelsfound = [];
+      //   for (let val of str) {
+      //     if (val == "a" || val == "e" || val == "o" || val == "u") {
+      //       count++;
+      //       ovelsfound.push(val);
+      //     }
+      //   }
+      //   console.log(count);
+      //   console.log(ovelsfound);
+      // }
+      // owelprint("tushar");
+      // let arr = ["tt", "ss"];
+      // arr.forEach((val) => {
+      //   console.log(val.toUpperCase());
+      // });
+      // let arr = ["tt", "ss"];
+      // arr.forEach((val, idx, arr) => {
+      //   console.log(val, idx, arr);
+      // });
+      // let num = [1, 2, 3, 4, 5];
+      // num.map((val) => {
+      //   document.getElementById("display").innerHTML = val;
+      //   console.log(val);
+      // });
+      // let num = [1, 2, 3, 4, 5];
+      // let newarr = num.map((val) => {
+      //   return val * 2;
+      // });
+      // document.getElementById("display").innerHTML = newarr;
+      //----- filter dublicate
+      // let num = [1, 2, 3, 4, 5, 3, 4];
+      // let dublicate = num.filter((val, index) => {
+      //   return num.indexOf(val) !== index;
+      // });
+      // console.log(dublicate);//4,3
+      // let num = [1, 2, 3, 4, 5, 3, 4];
+      // let unique = [...new Set(num)];
+      // console.log(unique);
+      // let num = [1, 2, 3, 4, 5, 3, 4];
+      // let uni = [...new Set(num)];
+      // console.log(uni);
+      // let num = [10, 20, 30, 40, 50, 80, 90, 95];
+      // let aboveninety = num.filter((val) => {
+      //   return val >= 90;
+      // });
+      // console.log(aboveninety);
+      // let n = prompt("enter n number");
+      // let arr = [];
+      // for (let i = 1; i < n; i++) {
+      //   arr.push(i);
+      // }
+      // console.log(arr);
+      // let rideuce = arr.reduce((res, curr) => {
+      //   return res + curr;
+      // });
+      // console.log(rideuce);
+    </script>
+    <script>
+      // let str = document.querySelector("h2");
+      // let final = str.innerText + "from apna college";
+      // console.log(final);
+      //let output = document.querySelectorAll(".box");
+      // output[0].innerText = "div1";
+      // output[1].innerText = "div2";
+      // output[2].innerText = "div3";
+      // console.log(output);
+      //use loop
+      // let idx = 1;
+      // for (let arr of output) {
+      //   arr.innerText = `new unique value ${idx}`;
+      //   idx++;
+      //   console.log(arr);
+      // }
+      // let attr = document.querySelector(".box");
+      // let finalattr = attr.getAttribute("id");
+      // console.log(finalattr);
+      // let tt = document.querySelector(".box");
+      // tt.setAttribute("id", "zatu");
+
+      // console.log(tt.getAttribute("id")); // "zatu"
+      // let newbtn = document.createElement("button");
+      // newbtn.innerText = "submit";
+      // console.log(newbtn);
+      // let tt = document.querySelector("div");
+      // tt.append(newbtn);
+      // console.log(tt);
+      let btn = document.createElement("button");
+      btn.innerText = "click me";
+      btn.style.backgroundColor = "red";
+      btn.style.color = "white";
+      console.log(btn);
+      let final = document.querySelector("body");
+      final.before(btn);
+    </script>
+  </body>
+</html>
