@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+     //callback ex
+      // function tushar(a, callback) {
+      //   console.log("hii tushar");
+      //   callback();
+      // }
+
+      // function rahul() {
+      //   console.log("hii rahul");
+      // }
+      // tushar(10, rahul);
+
+      // callback hell
+      // function getdata(id, nextdata) {
+      //   setTimeout(() => {
+      //     console.log("data", id);
+      //     if (nextdata) {
+      //       nextdata();
+      //     }
+      //   }, 2000);
+      // }
+      // getdata(1, () => {
+      //   getdata(2,()=>{
+      //     getdata(3)
+      //   });
+      // });
+
+      //promise
+      // function getdata(id) {
+      //   return (promise = new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       resolve("success")
+      //       console.log(id);
+      //     }, 3000);
+      //   }));
+      // }
+      // getdata(12);
+
+      // const getpromise=()=>{
+      //  return new Promise((resolve ,reject)=>{
+      // console.log("i am apromise")
+      // reject(" network reject")
+      // //resolve("successfully")
+      //   })
+      // }
+      // let tushar=getpromise()
+      // tushar.then((res)=>{
+      //   console.log("promise fullfilled.......",res)
+      // })
+      // tushar.catch((err)=>{
+      //   console.log("rejected....",err)
+      // })
+
+      // function asyncfun1(){
+      //   return new Promise((resolve, reject)=>{
+      // setTimeout(()=>{
+      // console.log("date are comming asyncfun 1")
+      // resolve("success")
+      // },3000)
+      //   })
+      // }
+      // let p1= asyncfun1();
+      // p1.then((res)=>{
+      //   console.log(res);
+      // })
+ // let arr = [1, 2, 4, 5, 6];
+      // let min = Math.min(...arr);
+      // let max = Math.max(...arr);
+      // for (let i = min; i <= max; i++) {
+      //   if (!arr.includes(i)) {
+      //     arr.push(i);
+      //   }
+      // }
+      // arr.sort((a, b) => a - b);
+      // console.log(arr);
+
+      // let str = "tushar";
+      // let reverseString = "";
+      // for (let i = str.length - 1; i >= 0; i--) {
+      //   reverseString = reverseString + str[i];
+      // }
+      // console.log(reverseString);
+      // let str = "tushar";
+      // let reversString = str.split("").reverse().join("");
+      // console.log(reversString);
+
+      // let arr = [1, 3, 4, 5, 6];
+      // let maximum = Math.max(...arr);
+      // let minimum = Math.min(...arr);
+      // for (let i = minimum; i <= maximum; i++) {
+      //   if (!arr.includes(i)) {
+      //     arr.push(i);
+      //   }
+      // }
+      // arr.sort((a, b) => a - b);
+      // console.log(arr);
+      // let str = "tushar";
+      // let reverseString = str.split("").reverse().join("");
+      // console.log(reverseString);
+
+      //find missing number
+      // let arr = [1, 2, 3, 5, 6, 7];
+      // let maximum = Math.max(...arr);
+      // let minimum = Math.min(...arr);
+      // for (let i = minimum; i <= maximum; i++) {
+      //   if (!arr.includes(i)) {
+      //     arr.push(i);
+      //   }
+      // }
+      // arr.sort((a, b) => a - b);
+      // console.log(arr);
+      //reverse order
+      // let str = [1, 2, 3, 4];
+      // str.reverse();
+      // console.log(str);
+
+      // let arr = ["tu", "kk", "rr"];
+      // for (let val of arr) {
+      //   console.log(val);
+      // }
+
+      //average
+      // let marks = [44, 34, 35, 36, 6, 327, 38];
+      // let total = 0;
+      // for (let i of marks) {
+      //   total = total + i;
+      // }
+      // let avg = total / marks.length;
+      // console.log(`average marks = ${avg}`);
+
+      //discount
+      // let arr = [100, 200, 300, 400, 500];
+      // for (let val of arr) {
+      //   let offer = val / 10;
+      //   console.log(`the actual price and offer are 10% = ${val}`);
+      //   let arra = val - offer;
+      //   console.log(`value after offer ${arra}`);
+      // }
+ // let arr = [1, 2, 4, 5, 6];
+      // let min = Math.min(...arr);
+      // let max = Math.max(...arr);
+      // for (let i = min; i <= max; i++) {
+      //   if (!arr.includes(i)) {
+      //     arr.push(i);
+      //   }
+      // }
+      // arr.sort((a, b) => a - b);
+      // console.log(arr);
+
+      // let str = "tushar";
+      // let reverseString = "";
+      // for (let i = str.length - 1; i >= 0; i--) {
+      //   reverseString = reverseString + str[i];
+      // }
+      // console.log(reverseString);
+      // let str = "tushar";
+      // let reversString = str.split("").reverse().join("");
+      // console.log(reversString);
+
+      // let arr = [1, 3, 4, 5, 6];
+      // let maximum = Math.max(...arr);
+      // let minimum = Math.min(...arr);
+      // for (let i = minimum; i <= maximum; i++) {
+      //   if (!arr.includes(i)) {
+      //     arr.push(i);
+      //   }
+      // }
+      // arr.sort((a, b) => a - b);
+      // console.log(arr);
+      // let str = "tushar";
+      // let reverseString = str.split("").reverse().join("");
+      // console.log(reverseString);
+
+      //find missing number
+      // let arr = [1, 2, 3, 5, 6, 7];
+      // let maximum = Math.max(...arr);
+      // let minimum = Math.min(...arr);
+      // for (let i = minimum; i <= maximum; i++) {
+      //   if (!arr.includes(i)) {
+      //     arr.push(i);
+      //   }
+      // }
+      // arr.sort((a, b) => a - b);
+      // console.log(arr);
+      //reverse order
+      // let str = [1, 2, 3, 4];
+      // str.reverse();
+      // console.log(str);
+
+      // let arr = ["tu", "kk", "rr"];
+      // for (let val of arr) {
+      //   console.log(val);
+      // }
+
+      //average
+      // let marks = [44, 34, 35, 36, 6, 327, 38];
+      // let total = 0;
+      // for (let i of marks) {
+      //   total = total + i;
+      // }
+      // let avg = total / marks.length;
+      // console.log(`average marks = ${avg}`);
+
+      //discount
+      // let arr = [100, 200, 300, 400, 500];
+      // for (let val of arr) {
+      //   let offer = val / 10;
+      //   console.log(`the actual price and offer are 10% = ${val}`);
+      //   let arra = val - offer;
+      //   console.log(`value after offer ${arra}`);
+      // }
+ //Reduce method use total
+      // const arr = [5, 1, 3, 2, 6];
+      // let sum = arr.reduce((acc, curr) => {
+      //   return acc + curr;
+      // });
+      // console.log(sum);
+
+      //for loop use total calculate
+      // const arr = [5, 1, 3, 2, 6];
+      // sum=0;
+      // function tushar(){
+
+      //   for(let i=0 ;i<arr.length;i++){
+      //      sum= sum +arr[i]
+
+      //   }
+      //   return sum
+      // }
+      // let final= tushar()
+      // console.log(final)
+
+      //forEach loop use total
+      // const arr = [5, 1, 3, 2, 6];
+      // let sum=0
+      // let tt= arr.forEach((val)=>{
+      //   sum= sum + val ;
+      // })
+      // console.log(sum)
+
+      //maximum value  not using MATH Method--------
+      // const arr = [5, 1, 3, 2, 6];
+      // let max=0;
+      // for(let i=0 ;i<arr.length;i++){
+      //   if( arr[i]>max ){
+      //     max= arr[i]
+      //   }
+
+      // }
+      // console.log(max)
+
+      // maximum value reduce method use
+      // const arr = [5, 1, 3, 2, 6];
+      // let final= arr.reduce((acc, curr)=>{
+      //   return acc > curr ? acc :curr
+      //  })
+      //  console.log(final)
+
+      //math method
+      // const arr = [5, 1, 3, 2, 6];
+      // let maximumNum = Math.max(...arr);
+      // console.log(maximumNum);
+
+  </script>
+</body>
+</html>
