@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //@@@@@@@@Reverse a string.@@@@@@@@@@@@@
+      // let str = "tushar";
+      // function Reverse() {
+      //   let final = str.split("").reverse().join("");
+      //   console.log(final);
+      // }
+      // Reverse();
+      //@@@@@@@@Reverse a string without inbuild method.@@@@@@@@@@@@@
+      // function reverseString(str) {
+      //   let reversed = "";
+
+      //   for (let i = str.length - 1; i >= 0; i--) {
+      //     reversed = reversed + str[i];
+      //   }
+      //   return reversed;
+      // }
+      // console.log(reverseString("tushar"));
+
+      //@@@@@@@@@@Reverse a array.@@@@@@@@@@@@@@@
+      // let arr = [1, 2, 3, 4, 5, 6];
+      // let reverse = arr.reverse();
+      // console.log(reverse);
+
+      //@@@@@@@@ Remove duplicates from array. @@@@@@@@@@
+      // let arr = [1, 2, 3, 4, 5, 6, 4, 2];
+      // let unique = [...new Set(arr)];
+      // console.log(unique);
+      //@@@@@@@@ Remove duplicates filter Method used from array. @@@@@@@@@@
+      // let arr = [1, 2, 3, 4, 5, 6, 4, 2];
+      // let unique = arr.filter((val, index) => {
+      //   return arr.indexOf(val) == index;  /// only dublicate number print then !== index output= [2,4]
+      // });
+      // console.log(unique);
+
+      //@@@@@@@@@@@@  Flatten Nested Array  called recursion  @@@@@@@@@@@@@@@@@@@@
+      // const arr = [1, [2, 3], [4, [5, 6]]];
+      // let Flat = arr.flat(Infinity);
+      // console.log(Flat);
+
+      //@@@@@@@@@@@@ Debounce Function @@@@@@@@@@@@
+
+      //@@@@@@@@@@@@@@    Sort Objects    age is a accending order    @@@@@@@@@@@@@@@@
+      // let user = [
+      //   {
+      //     name: "tushar",
+      //     age: 27,
+      //   },
+      //   {
+      //     name: "rahul",
+      //     age: 30,
+      //   },
+      //   {
+      //     name: "amit",
+      //     age: 26,
+      //   },
+      //   {
+      //     name: "yatharth",
+      //     age: 5,
+      //   },
+      // ];
+      // let finalsort = user.sort((a, b) => {
+      //   return a.age - b.age;     //Decending  b.age - a.age
+      // });
+      // console.log(finalsort);
+
+      //@@@@@@@@@@@@@   Find Frequency of Elements     @@@@@@@@@@@@@@@@
+
+      //@@@@@@@@@@@@@  Find missing number in array.  @@@@@@@@@@@@@@@@
+
+      // 1. Write a JavaScript function to calculate the sum of two numbers.
+      // function calculate(a,b){
+      // return a+b;
+      // }
+      // let sum=calculate(4,5);
+      // console.log(sum)
+
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+      //2. Write a JavaScript program to find the maximum number in an array.
+      // let arr=[12,45,23,54,60];
+      // let maxvalue= Math.max(...arr);
+      // console.log(maxvalue)
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+
+      //3. Write a JavaScript function to check if a given string is a palindrome (reads the same forwards and backwards).
+      //first method
+      // function palindrome(num){
+      // let numstr=num.toString();
+      // let result=numstr.split('').reverse().join('');
+      // return numstr === result;
+      // }
+      // let output= palindrome("tmt");
+      // console.log(output);
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+      //second method    Palindrom Check
+      // let str= prompt();
+
+      // const reverseval= () =>{
+      // let reverse=str.toString().split("").reverse().join("");
+      // let strval= str.toString();
+      // if(reverse === strval){
+      // console.log("correct it is a palindrom number");
+      // }else{
+      // console.log("wrong it is a not palindrom number")
+      // }
+
+      // console.log(reverse)
+      // };
+      // reverseval()
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+      //4. Write a JavaScript program to reverse a given string.
+      // let str=prompt("enter a number");
+      // let Rev=()=>{
+      // let first= str.split('').reverse().join('');
+      // console.log("Reverse number string:",first);
+      // }
+      // Rev();
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+      //5. Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.
+      // first method
+      // let numbers=[1,2,3,4,5,6,7,8,9];
+      // numbers.forEach((val)=>{
+      // if(val %2==0){
+      // console.log(val);
+      // }
+      // })
+      //second method
+      // let numbers=[1,2,3,4,5,6,7,8,9];
+      // let even=numbers.filter((val)=>{
+      // return val %2==0;
+      // })
+      // console.log(even)
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+      //6. Write a JavaScript program to calculate the factorial of a given number.
+      // let arr=10;
+      // let fact=1;
+      // for(let i=1;i<arr;i++){
+      // fact=fact*i
+      // console.log(i,fact);
+      // }
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+      //7. Write a JavaScript function to check if a given number is prime.
+      //function primeNumber(prime) {
+      // if (prime <= 1) {
+      //   console.log("not prime number", prime);
+      //   return;
+      // }
+      //   for (let i = 2; i <= 100; i++) {
+      //     if (prime % i === 0) {
+      //       console.log("not prime number", prime);
+      //       return;
+      //     }
+      //   }
+      //   console.log("prime number", i);
+      // }
+      // primeNumber(6);
+      //*********  Second method  *********
+      // function printPrimes() {
+      //   for (let num = 2; num <= 100; num++) {
+      //     let isPrime = true;
+
+      //     for (let i = 2; i < num; i++) {
+      //       if (num % i === 0) {
+      //         isPrime = false;
+      //         break;
+      //       }
+      //     }
+
+      //     if (isPrime) {
+      //       console.log(num);
+      //     }
+      //   }
+      // }
+
+      // printPrimes();
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+
+      //8. Write a JavaScript program to find the largest element in a nested array.
+      // let arr = [1, 2, 56, [100,150],67, 90,[90, [69]], 69];
+      // let largest =Math.max(...arr.flat(Infinity));
+      // console.log(largest);
+
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+
+      //9. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.(Each number = sum of previous two numbers)
+      // function fibonacci(n) {
+      //   let a = 0;
+      //   let b = 1;
+      //   let result = [];
+      //   for (let i = 0; i < n; i++) {
+      //     result.push(a);
+      //     let next = a + b;
+      //     a = b;
+      //     b = next;
+      //   }
+      //   return result;
+      // }
+      // console.log(fibonacci(10));
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+
+      //10. Write a JavaScript program to convert a string to title case (capitalize the first letter of each word).
+      // let str = ["tushar", "rahul", "amol", "raju"];
+      // if(name.length<2)
+      //   return name
+      
+      // let result = str.map((name) => {
+      //   return name.charAt(0).toUpperCase() + name.slice().toLowerCase();
+      // });
+      // console.log(result);
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+      //11. Given an array of numbers, write a function to find the largest and smallest numbers in the array.
+      // let arr=[20,30,4,45,400];
+      // function smallLarge(){
+      // let small=Math.min(...arr);
+      // let large=Math.max(...arr);
+      // return {small,large};
+      // }
+      // let final=smallLarge();
+      // console.log(final);
+
+      //@@@@@@@@@@@@@   END  @@@@@@@@@@@@@
+    </script>
+  </body>
+</html>
